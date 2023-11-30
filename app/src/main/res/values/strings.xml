@@ -90,4 +90,5 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="loading" tools:ignore="TypographyEllipsis">Loading...</string>
+    <string name="attraction_image_description">Attraction Image</string>
 </resources>
