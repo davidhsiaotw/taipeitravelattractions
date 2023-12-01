@@ -2,9 +2,11 @@ package com.example.taipeitravelattractions
 
 import android.content.Intent
 import android.content.res.Configuration
+import android.net.Uri
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
 import android.os.Parcelable
+import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
@@ -74,7 +76,18 @@ class AttractionActivity : AppCompatActivity() {
         email.text = stringBuilder.append("電子郵箱：").append(attraction.email.ifBlank { "無" })
         stringBuilder.clear()
 
-        // TODO: hyperlink or intent to Google Map
+        // navigate to Android Google Maps: https://www.youtube.com/watch?v=WiMa7nh7rF4&ab_channel=CodesEasy
+        val googleMapApi =
+            stringBuilder.append(getString(R.string.googleMap)).append(attraction.name).toString()
+        map.setOnClickListener {
+//            Log.d("AttractionActivity", "Google Map query API: $googleMapApi")
+            val gmIntentUri = (Uri.parse(googleMapApi))
+            val mapIntent = Intent(Intent.ACTION_VIEW, gmIntentUri)
+            mapIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            mapIntent.setPackage("com.google.android.apps.maps")
+            startActivity(mapIntent)
+        }
+        stringBuilder.clear()
 
         official.text = stringBuilder.append("官網：").append(attraction.website.ifBlank { "無" })
         stringBuilder.clear()
