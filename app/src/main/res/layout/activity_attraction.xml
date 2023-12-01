@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".AttractionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager_detail_attractionImages"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewPager_detail_attractionImages"
+            tools:text="MAJI集食行樂_圓山花博爭豔館_MAJI集食行樂_圓山花博爭豔館_MAJI集食行樂_圓山花博爭豔館" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionName"
+            tools:text="@string/attraction_introduction" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionIntroduction"
+            tools:text="主題分類：戶外踏青,公廁" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionCategories"
+            tools:text="地區：信義區" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionDistrict"
+            tools:text="地址：信義區天堂路0段0號" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionAddress"
+            tools:text="電話：0998765321" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionTelephone"
+            tools:text="電子郵箱：taipei@gov.mail.com" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/attraction_map_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionEmail" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionMap"
+            tools:text="官網：https://www.imrich.com/theme=wgro9huevrobivfnjzlk;l kjtq4pihupgonu34&amp;lang=en" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionRemind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionWebsite"
+            tools:text="@string/attraction_remind" />
+
+        <TextView
+            android:id="@+id/textView_detail_attractionUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/attraction_url_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_detail_attractionRemind" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

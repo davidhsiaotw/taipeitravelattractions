@@ -1,94 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Taipei Travel Attractions</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
-
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
-
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
-    </string>
     <string name="loading" tools:ignore="TypographyEllipsis">Loading...</string>
     <string name="attraction_image_description">Attraction Image</string>
+    <string name="title_activity_attraction">AttractionActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="attraction_introduction" translatable="false"><html>士林官邸有精緻的庭園造景設計，蟲鳴鳥叫、景色秀麗，是休閒遊憩的絕佳場所。當年因為緊鄰著中山北路，佔據極佳的地理位置，可快速直達總統府，加上後有福山做為倚靠，優越的地勢，所以成為蔣故總統官邸。\n1996年，官邸首度開放市民觀賞園藝與休憩使用。玫瑰園，是蔣夫人最喜愛的花園；西式庭園中浪漫美好的風光，是新人婚紗照最常取景的地方；中式庭園裡的拱橋、曲池、流水等東方庭園造景，則令人彷彿置身古代中式庭院。\n官邸公園周圍為福山山系所環抱，佔地9.28公頃。其中的士林官邸於民國三十九年因先總統蔣公居住於此而設立，因為總統居住於此的關係，附近嚴禁改建及新建，使得官邸公園能維持原有的自然景觀。\n\n凱歌堂為蔣家人禮拜及受洗之處。新蘭亭建於民國三十九年，又名壽亭，為中式四角狀建築，是每年蔣公作壽的地方，也是舉辦各類蘭花展覽之地。慈雲亭建於福山之上，為兩層樓方形亭，是老總統為懷念母親所建。 官邸公園主要分為外花園、內花園、正房、栽種蘭花的溫室盆栽區、玫瑰園、凱歌堂、新蘭亭和慈雲亭。其中內花園屬中式庭園，其中有曲折的小橋流水、假山、奇石及一座紅色的中式涼亭。外花園區為西式庭園，區內設計成毛氈花壇，廣植花卉，美不勝收，是每年辦理菊展的主題園區。玫瑰園，育有200餘玫瑰品種，4000多株玫瑰，盛開期在每年的11月至翌年4月間，色彩繽紛為蔣夫人最喜愛散步的地方。\n士林官邸每年年初及年末都會舉辦各式花展，像是鬱金香展、玫瑰花展、蝴蝶蘭展、菊展&amp;hellip;等，而最為廣為人知的就是菊展和鬱金香展，利用花卉搭配上園區造景，打造出色彩繽紛的展場。\n菊展\n接近秋冬的11至12月就是全台知名花展之一的菊展。藉由大立菊、造型菊、小菊及菊科草花搭配每年不同主題的展場造型物與園藝造景，將士林官邸打造成大型花園，吸引各地遊客前來觀賞。\n\n鬱金香展\n每年春節過後的2至3月為士林官邸鬱金香展，種植著11萬株的荷蘭及日本鬱金香花海，並設置異國裝置藝術，讓人彷彿置身於國外。\n\n士林官邸公園於民國八十五年正式開放民眾參觀，為提供更多更好的服務，也積極加強各項的整理規劃及建設，成為臺北市區中另一處供民眾休憩的景點。</html></string>
+    <string name="attraction_remind" translatable="false"><html>提醒：\n1.全區禁菸\n2.禁止攜帶危險物品或易燃物\n3.禁止攜帶動物(放置於寵物籠內及導盲犬除外)\n4.全區提供無線上網服務</html></string>
+    <string name="attraction_url_text">臺北市政府觀光傳播局網站</string>
+    <string name="attraction_map_text">🗺️ Google Map</string>
 </resources>
