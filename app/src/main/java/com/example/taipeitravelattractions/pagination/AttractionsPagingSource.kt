@@ -5,8 +5,6 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.taipeitravelattractions.model.Attraction
 import com.example.taipeitravelattractions.network.TravelTaipeiApiService
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class AttractionsPagingSource(
     private val apiService: TravelTaipeiApiService
@@ -24,9 +22,7 @@ class AttractionsPagingSource(
         val page = startKey / params.loadSize + 1
 
         try {
-            val response = withContext(Dispatchers.Default) {
-                apiService.getAttractions(page)
-            }
+            val response = apiService.getAttractions(page)
 
             return if (response.isSuccessful) {
                 val attractions = response.body()?.data ?: listOf()
